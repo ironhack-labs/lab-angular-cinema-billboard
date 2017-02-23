@@ -1,3 +1,3 @@
 ![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
 
-# DE | My Personal Page
+# DE | Cinema Billboard
