@@ -2,7 +2,7 @@
 
 # DE | Cinema Billboard
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_3b41840a621af4b092e9a85c32baf612.png)
+![](images/image-1.png)
 
 ## Learning Goals
 
@@ -37,41 +37,41 @@ All the files of your project, including the service and the different component
 
 ## Introduction
 
-Nowadays, cinemas are not one of the best business to run. The Internet is damaging the industry, giving the chance to find any movie without having to pay to watch it. A Cinema has contacted Ironhack to help them changing the vision that people have.
+Nowadays, movie cinemas are hurting. The internet is damaging the industry, allowing people to search and download movies without paying for them. A cinema has contacted Ironhack to help them change people's views on movies.
 
-Their idea is to redo their website by using Angular2. They think that if they use the latest technologies on their website, people will see them with another point of view, and their popularity will grow up importantly.
+Their idea is to redo their website by using Angular2. They think that if they use the latest technologies on their website, people will see them in a hip and cool new way.
 
-The cinema has 5 different rooms, where you will be able to watch 5 movies. The newset purposal of this cinema is that they are not going to show you the lastest movies, but your favorite ones! So you will have to help them deciding what to show on the rooms.
+The cinema has 5 different rooms, where you will be able to watch 5 movies. The newset purposal of this cinema is that they are not going to show you the lastest movies, but your favorite ones! Your task will be to help them decide which movies to show in the rooms.
 
-### Iteration 1: Service Creation
+### Iteration 1 | Service Creation
 
-First of all, we are going to create an Angular Service to handle all the movies information. This services is going to have the following:
+First, we are going to create an Angular Service to contain all of the movies' information. This service is going to have the following:
 
-**`Movies`**
+#### Movies
 
-It will be an Array of objects, that will contain one item per each cinema room. Each object inside the array will have the following information:
+`movies` will be an Array of objects, that will contain one item per each cinema room. Each object inside the array will have the following information:
 
-- An `id`, that will be a unique number used to distinguish between movies.
-- A `title`, that will be an string, containing the movie title.
-- A `poster`, that will be an string and will contain a URL to an image that represents the movie.
-- A `synopsis`, that will contain a brief description about the movie. It has to be an string.
-- `Genres` will be an array of strings, where we will indicate which genres represent the movie.
-- The `year` of the movie, that will be a number.
-- An string where we will indicate the `director` of the movie.
-- An array with all the `actors` names, using one string per each actor.
-- Another array of strings where we will indicate the `hours` that the movie is projecte. i.e. `Wednesday 19:30, 22:30` would be an element of this array to indicate that you can watch a movie on wednesday at 19:30h and 22:30h.
-- Last, but not least, the `room` number where people can watch the movie.
+- **`id`** (Number) - A unique number used to distinguish between movies.
+- **`title`** (String) - Contains the movie title.
+- **`poster`** (String) - A URL to a poster image for the movie.
+- **`synopsis`** (String) - A brief description about the movie.
+- **`Genres`** (Array of Strings) - The genres of a movie, such as "Adventure", "Action", "Romantic Comedy" etc.
+- **`year`** (Number) - Movie's release year.
+- **`director`** (String) - Director of the movie.
+- **`actors`** (Array of Strings) - The movie's actors names, using one string per each actor.
+- **`hours`** (Array of Strings) - The times the movie is showing. i.e. `Wednesday 19:30, 22:30` would be an element of this array to indicate that you can watch a movie on wednesday at 19:30h and 22:30h.
+- **`room`** (Number) - Room number of the movie. Will be a value between 1 and 5.
 
-In the `Movies` array you will have to create an element for each movie, and fill up the different fields we just defined. **Use your favorite movies to do that**.
+In the `movies` array you will have to create an element for each movie, and fill the different fields we just defined. **Use your favorite movies to do this**.
 
-**Methods**
+#### Methods
 
-The service will also have two different methods that will be used later on the project. The methods you have to create are the following:
+The movies service will also have two different methods that will be used later on the project. The methods you have to create are the following:
 
-- `getmovies()` that will return the array of movies.
-- `getMovie(id)`, that will receive as a parameter a movie number id, and will return the indicated movie.
+- **`getmovies()`** - Returns the array of movies.
+- **`getMovie(id)`** - Will receive  a movie's number id as a parameter, and will return correct movie.
 
-**Tasks**
+#### Tasks
 
 - Create a `Cinema` service.
 - Add a `Movies` array of objects. Each object will have the following properties:
@@ -88,20 +88,21 @@ The service will also have two different methods that will be used later on the 
 - Add a `getMovies()` method, that will return the array of movies.
 - Add a `getMovie(id)` method, that receives a number id as a parameter and returns an object from the `Movies` array.
 
-### Iteration 2: Routes
+### Iteration 2 | Routes
 
-In the second iteration of this exercise, we will create two different routes to show the information of our cinema. In the main page of the application, we will show a list with all the movies in the cinema. Once you click in one of the movies, you will see all the information of a movie.
+In the second iteration of this exercise, we will create two different routes to show the details of our cinema.
 
-First of all, we have to install `@angular/router` in the project, and create the components we will use to show the information: `MyHomeComponent` and `MyMovieComponent`. Once we have created all the components we need, we have to create two different routes:
+In the main page of the application, we will show a list with all the movies in the cinema. Once you click on one of the movies, you will see the movie's details.
+
+We will create the components that will be used to show the information: `MyHomeComponent` and `MyMovieComponent`. Once we have created all the components we need, we have to create two different routes:
 
 - `/home`, that will render the `MyHomeComponent` component.
-- `/movie/:ud`, that will render the `MyMovieComponent` component.
+- `/movie/:id`, that will render the `MyMovieComponent` component.
 
-We will not create the logic of each component yet, but we have to add the `<router-outlet></router-outlet>` tag in the `app.component.html` file to be able to load the different information depending on the indicated route.
+Remember, we also have to add the `<router-outlet></router-outlet>` tag in the `app.component.html` file to be able to load the different information depending on the indicated route.
 
-**Tasks**
+#### Tasks
 
-- Add the `@angular/router` to the project.
 - Create two components:
   - `MyHomeComponent`
   - `MyMovieComponent`
@@ -110,36 +111,36 @@ We will not create the logic of each component yet, but we have to add the `<rou
   - `/movie/:id`, to show `MyMovieComponent`
 - Add `<router-outlet></router-outlet>` tag to `app.component.html` file
 
-### Iteration 3: Home Page
+### Iteration 3 | Home Page
 
-We are going to work over the `MyHomeComponent` component we created in the iteration above. We have to use the `Cinema` provider to load all the movies information we have declared in the array.
+We are going to work on the `MyHomeComponent` component we created in the iteration above. We have to use the `Cinema` service to load all the movies information we have declared in the `movies` array.
 
-We have to show in the main page the list of movies that are available in the Cinema. Each movie has to be a link to the movie page.
+In the main page, we will show a list of all the movies. In addition, we will add a link to view the details of a movie.
 
-Remember that the goal is to convert as many visitors as possible in our clients. Style a little bit the page to show the information.
+Remember, we're trying to stand out in the cinema world and convert all of the hip millenials. Add some styling to the home page.
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_9e7df057fd85adf216cc180a05f9b3db.png)
+![](images/image-2.png)
 
-**Tasks**
+#### Tasks
 
-- Load all the movies from the `Cinema` service, with the `getMovies()` method defined on it.
-- Show the information in the `/home` page.
-- Create a link for each movie that redirects the user to `/movie/:id`.
+- Load the movies from the `Cinema` service, with the `getMovies()` method we've previously defined.
+- Display the movies on the `/home` page.
+- Create a link for each movie that directs the user to `/movie/:id`.
 - Style the page.
 
-### Iteration 4: Movie Page
+### Iteration 4 | Movie Page
 
-Once the user visits a movie page, we have to show them the information. Again, we need to use the `Cinema` service to load the information of the movie. We have to show all the movie information, and add a "Go back" button to let the user go back to the home page.
+Once the user visits a movie page, we have to show them the movie's details. Again, we need to use the `Cinema` service to load the information of one movie. On this page, display *all* of the movie's details, and create a back button to return to the home page.
 
-Remember to style the page to show all the information of the movie.
+In addition, add a bit of styling to make the details page look nice.
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_2ecbb29232615506fcddd875d450582e.png)
+![](images/image-3.png)
 
-**Tasks**
+#### Tasks
 
 - Load the movie from the `Cinema` service, with the `getMovie()` method defined on it. Use the `:id` parameter in the URL to get the correct movie.
-- Show all the data of the movie in the view.
-- Add a "Go back" button, that redirects the users to the home page.
+- Show the movie's details in the view.
+- Add a "Go back" button, that takes the user to the home page.
 - Style the page.
 
 /Happy coding!
