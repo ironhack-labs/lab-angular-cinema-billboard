@@ -62,7 +62,7 @@ First, we are going to create an Angular Service to contain all of the movies' i
 - **`hours`** (Array of Strings) - The times the movie is showing. i.e. `Wednesday 19:30, 22:30` would be an element of this array to indicate that you can watch a movie on wednesday at 19:30h and 22:30h.
 - **`room`** (Number) - Room number of the movie. Will be a value between 1 and 5.
 
-In the `movies` array you will have to create an element for each movie, and fill the different fields we just defined. **Use your favorite movies to do this**.
+In the `movies` array you will have to create an element for each movie, and fill the different fields we just defined. **We've provided a list of sample movies in src/sample-movies.js**. You only have to fill in the hours and room number.
 
 #### Methods
 
