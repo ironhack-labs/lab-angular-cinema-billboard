@@ -37,8 +37,8 @@
     ]
   }, {
     id: 3,
-    title: "https://i.imgur.com/abJNkWI.jpg",
-    poster: nil,
+    title: "The Godfather Part II",
+    poster: "https://i.imgur.com/abJNkWI.jpg",
     synopsis: "The Godfather Part II presents two parallel storylines. One involves Mafia chief Michael Corleone in 1958/1959 after the events of the first movie; the othe...",
     genres: [
       "Crime", "Drama"
@@ -55,8 +55,8 @@
     ]
   }, {
     id: 4,
-    title: "https://i.imgur.com/3jLPB46.jpg",
-    poster: nil,
+    title: "The Dark Knight",
+    poster: "https://i.imgur.com/3jLPB46.jpg",
     synopsis: "The movie begins with a gang of men with clown masks breaking into the bank where the mob has a large portion of their money stashed. It begins with five cl...",
     genres: [
       "Action", "Crime", "Drama", "Thriller"
