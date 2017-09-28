@@ -2,7 +2,7 @@
 
 # DE | Cinema Billboard
 
-![](images/image-1.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_661d7cfdd0ae57c88a6212a26519b981.jpg)
 
 ## Learning Goals
 
@@ -119,7 +119,7 @@ In the home page, we will show a list of all the movies. In addition, we will ad
 
 Remember, we're trying to stand out in the cinema world and convert all of the hip millenials. Add some styling to the home page.
 
-![](images/image-2.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_fb83eb4eaabe9047dd223c0fc0f97a71.png)
 
 #### Tasks
 
@@ -134,7 +134,7 @@ Once the user visits a movie page, we have to show them the movie's details. Aga
 
 In addition, add a bit of styling to make the details page look nice.
 
-![](images/image-3.png)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_fafad68118b0c952050866aec0c0e157.png)
 
 #### Tasks
 
