@@ -8,9 +8,9 @@
 
 After this lesson, you will be able to:
 
-- Create an angular service to share information with all the components in your application.
-- Create angular routes with parameters.
-- Create different components related between them.
+- Create an Angular service to share information with all the components in your application.
+- Create Angular routes with parameters.
+- Create different components that are connected to each other.
 
 ## Requirements
 
@@ -37,11 +37,11 @@ All the files of your project, including the service and the different component
 
 ## Introduction
 
-Nowadays, movie cinemas are hurting. The internet is damaging the industry, allowing people to search and download movies without paying for them. A cinema has contacted Ironhack to help them change people's views on movies.
+These days, movie theaters are hurting. The internet is damaging the industry, allowing people to search and download movies without paying for them. A cinema has contacted Ironhack to help them change people's views on movies.
 
 Their idea is to redo their website by using Angular2. They think that if they use the latest technologies on their website, people will see them in a hip and cool new way.
 
-The cinema has 5 different rooms, where you will be able to watch 5 movies. The newset purposal of this cinema is that they are not going to show you the lastest movies, but your favorite ones! Your task will be to help them decide which movies to show in the rooms.
+The cinema has 5 different rooms, where you will be able to watch 5 movies. The cinema's latest proposal is to show people's favorite movies instead of the latest ones! Your task will be to help them decide which movies to show.
 
 ### Iteration 1 | Service Creation
 
@@ -53,28 +53,28 @@ First, we are going to create an Angular Service to contain all of the movies' i
 
 - **`id`** (Number) - A unique number used to distinguish between movies.
 - **`title`** (String) - Contains the movie title.
-- **`poster`** (String) - A URL to a poster image for the movie.
+- **`poster`** (String) - A URL of a poster image for the movie.
 - **`synopsis`** (String) - A brief description about the movie.
-- **`Genres`** (Array of Strings) - The genres of a movie, such as "Adventure", "Action", "Romantic Comedy" etc.
+- **`genres`** (Array of Strings) - The genres of a movie, such as "Adventure", "Action", "Romantic Comedy" etc.
 - **`year`** (Number) - Movie's release year.
 - **`director`** (String) - Director of the movie.
-- **`actors`** (Array of Strings) - The movie's actors names, using one string per each actor.
+- **`actors`** (Array of Strings) - The actors' names, using one string per each actor.
 - **`hours`** (Array of Strings) - The times the movie is showing. i.e. `Wednesday 19:30, 22:30` would be an element of this array to indicate that you can watch a movie on wednesday at 19:30h and 22:30h.
 - **`room`** (Number) - Room number of the movie. Will be a value between 1 and 5.
 
-In the `movies` array you will have to create an element for each movie, and fill the different fields we just defined. **We've provided a list of sample movies in src/sample-movies.js**. Copy the code from this file to your service, you only have to fill in the hours and room numbers.
+In the `movies` array you will have to create an element for each movie, and fill the different fields we just defined. **We've provided a list of sample movies in src/sample-movies.js**. Copy the code from this file into your service, you only have to fill in the hours and room numbers.
 
 #### Methods
 
 The movies service will also have two different methods that will be used later on the project. The methods you have to create are the following:
 
-- **`getmovies()`** - Returns the array of movies.
-- **`getMovie(id)`** - Will receive  a movie's number id as a parameter, and will return correct movie.
+- **`getMovies()`** - Returns the array of movies.
+- **`getMovie(id)`** - Will receive a movie's id number as a parameter, and will return correct movie.
 
 #### Tasks
 
 - Create a `Cinema` service.
-- Add a `Movies` array of objects. Each object will have the following properties:
+- Add a `movies` array of objects to the service. Each object will have the following properties:
   - `id`, number.
   - `title`, string.
   - `poster`, string.
@@ -113,9 +113,9 @@ Remember, we also have to add the `<router-outlet></router-outlet>` tag in the `
 
 ### Iteration 3 | Home Page
 
-We are going to work on the `MyHomeComponent` component we created in the iteration above. We have to use the `Cinema` service to load all the movies information we have declared in the `movies` array.
+We are going to work on the `MyHomeComponent` component we created in the iteration above. We have to use the `Cinema` service to load all the movies' information that's contained in the `movies` array.
 
-In the main page, we will show a list of all the movies. In addition, we will add a link to view the details of a movie.
+In the home page, we will show a list of all the movies. In addition, we will add a link to view the details of a movie.
 
 Remember, we're trying to stand out in the cinema world and convert all of the hip millenials. Add some styling to the home page.
 
