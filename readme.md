@@ -73,7 +73,7 @@ The movies service will also have two different methods that will be used later 
 
 #### Tasks
 
-- Create a `Cinema` service.
+- Create a `Movies` service.
 - Add a `movies` array of objects to the service. Each object will have the following properties:
   - `id`, number.
   - `title`, string.
