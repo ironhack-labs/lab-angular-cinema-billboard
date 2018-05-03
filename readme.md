@@ -23,13 +23,13 @@ Upon completion, run the following commands:
 
 ```bash
 $ git add .
-$ git commit -m"done"
+$ git commit -m "done"
 $ git push origin master
 ```
 
-Navigate to your repo and create a Pull Request -from your master branch to the original repository master branch.
+Navigate to your repo and create a pull request from your master branch to the original repository master branch.
 
-In the Pull Request name, add your campus, name, and last name separated by a dash "-".
+In the pull request name, add your campus, name, and last name separated by a dash "-".
 
 ## Deliverables
 
@@ -39,27 +39,27 @@ All the files of your project, including the service and the different component
 
 These days, movie theaters are hurting. The internet is damaging the industry, allowing people to search and download movies without paying for them. A cinema has contacted Ironhack to help them change people's views on movies.
 
-Their idea is to redo their website by using Angular2. They think that if they use the latest technologies on their website, people will see them in a hip and cool new way.
+Their idea is to redo their website by using Angular. They think that if they use the latest technologies on their website, people will see them in a hip and cool new way.
 
 The cinema has 5 different rooms, where you will be able to watch 5 movies. The cinema's latest proposal is to show people's favorite movies instead of the latest ones! Your task will be to help them decide which movies to show.
 
 ### Iteration 1 | Service Creation
 
-First, we are going to create an Angular Service to contain all of the movies' information. This service is going to have the following:
+First, we are going to create an Angular service to contain all of the movies' information. This service is going to have the following:
 
 #### Movies
 
-`movies` will be an Array of objects, that will contain one item per each cinema room. Each object inside the array will have the following information:
+`movies` will be an array of objects which will contain one item per each cinema room. Each object inside the array will have the following information:
 
 - **`id`** (Number) - A unique number used to distinguish between movies.
 - **`title`** (String) - Contains the movie title.
 - **`poster`** (String) - A URL of a poster image for the movie.
 - **`synopsis`** (String) - A brief description about the movie.
-- **`genres`** (Array of Strings) - The genres of a movie, such as "Adventure", "Action", "Romantic Comedy" etc.
+- **`genres`** (Array of strings) - The genres of the movie, such as "Adventure", "Action", "Romantic Comedy" etc.
 - **`year`** (Number) - Movie's release year.
 - **`director`** (String) - Director of the movie.
-- **`actors`** (Array of Strings) - The actors' names, using one string per each actor.
-- **`hours`** (Array of Strings) - The times the movie is showing. i.e. `Wednesday 19:30, 22:30` would be an element of this array to indicate that you can watch a movie on wednesday at 19:30h and 22:30h.
+- **`actors`** (Array of strings) - The actors' names, using one string per actor.
+- **`hours`** (Array of strings) - The times the movie is showing. i.e. `Wednesday 19:30, 22:30` would be an element of this array to indicate that you can watch a movie on Wednesday at 19:30h and 22:30h.
 - **`room`** (Number) - Room number of the movie. Will be a value between 1 and 5.
 
 In the `movies` array you will have to create an element for each movie, and fill the different fields we just defined. **We've provided a list of sample movies in src/sample-movies.js**. Copy the code from this file into your service, you only have to fill in the hours and room numbers.
